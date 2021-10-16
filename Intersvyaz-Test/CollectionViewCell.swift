@@ -20,7 +20,7 @@ class CollectionViewCell: UICollectionViewCell {
     
     var imageURL: URL?{
         didSet{
-            img.sd_setImage(with: imageURL, placeholderImage: UIImage(named: "maralin"))
+            img.sd_setImage(with: imageURL, placeholderImage: nil)
         }
     }
     

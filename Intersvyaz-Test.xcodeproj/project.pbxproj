@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		32CED4E9632300ED75096B6E /* Pods_Intersvyaz_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 538B06FA91A9FDE54934F97E /* Pods_Intersvyaz_Test.framework */; };
 		851205EF271960B10077CA86 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851205EE271960B10077CA86 /* Image.swift */; };
+		8512061C271B62BD0077CA86 /* CollectionViewFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8512061B271B62BD0077CA86 /* CollectionViewFooterView.swift */; };
 		857D7B142715817B006718B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857D7B132715817B006718B2 /* AppDelegate.swift */; };
 		857D7B162715817B006718B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857D7B152715817B006718B2 /* SceneDelegate.swift */; };
 		857D7B182715817B006718B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857D7B172715817B006718B2 /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		538B06FA91A9FDE54934F97E /* Pods_Intersvyaz_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Intersvyaz_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		851205EE271960B10077CA86 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		8512061B271B62BD0077CA86 /* CollectionViewFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewFooterView.swift; sourceTree = "<group>"; };
 		857D7B102715817B006718B2 /* Intersvyaz-Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Intersvyaz-Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		857D7B132715817B006718B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		857D7B152715817B006718B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,7 +103,6 @@
 				867C5A8C344221B1681F2D3C /* Pods-Intersvyaz-Test.debug.xcconfig */,
 				CF475DF2D36EDAC7E5241FB8 /* Pods-Intersvyaz-Test.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -140,6 +141,7 @@
 				857D7B2127158184006718B2 /* Info.plist */,
 				857D7B4B27159502006718B2 /* PhotoViewController.swift */,
 				851205EE271960B10077CA86 /* Image.swift */,
+				8512061B271B62BD0077CA86 /* CollectionViewFooterView.swift */,
 			);
 			path = "Intersvyaz-Test";
 			sourceTree = "<group>";
@@ -340,6 +342,7 @@
 				851205EF271960B10077CA86 /* Image.swift in Sources */,
 				857D7B142715817B006718B2 /* AppDelegate.swift in Sources */,
 				857D7B4727158D66006718B2 /* CollectionViewCell.swift in Sources */,
+				8512061C271B62BD0077CA86 /* CollectionViewFooterView.swift in Sources */,
 				857D7B162715817B006718B2 /* SceneDelegate.swift in Sources */,
 				857D7B4C27159502006718B2 /* PhotoViewController.swift in Sources */,
 			);
