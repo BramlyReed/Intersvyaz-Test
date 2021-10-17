@@ -51,7 +51,7 @@ class ViewController: UIViewController {
         URLSession.shared.dataTask(with: imageUrl) { data, responce, error in
             if let data = data,
                let photos = try? JSONDecoder().decode([Image].self, from: data){
-                tmpImages = photos.prefix(15).map{ Image(url: $0.url, title: $0.title) }
+                tmpImages = photos.prefix(30).map{ Image(url: $0.url, title: $0.title) }
                 self.images.append(contentsOf: tmpImages)
                 self.fetchingMore.toggle()
                 DispatchQueue.main.async {
@@ -86,9 +86,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
         viewController.imageURL = URL(string: images[indexPath.item].url)
         viewController.descriptionLabel.text = images[indexPath.item].title
         let navigationController = UINavigationController(rootViewController: viewController)
-        navigationController.modalPresentationStyle = .fullScreen
-        navigationController.modalTransitionStyle = .crossDissolve
-        
+        navigationController.modalPresentationStyle = .fullScreen        
         self.present(navigationController, animated: true)
     }
     
@@ -115,10 +113,3 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
         }
     }
 }
-
-
-
-
-
-
-

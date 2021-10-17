@@ -25,11 +25,13 @@ class PhotoViewController: UIViewController {
     }()
     var imageURL: URL?{
         didSet{
-            img.sd_setImage(with: imageURL, placeholderImage: UIImage(named: "maralin"))
+            img.sd_setImage(with: imageURL, placeholderImage: UIImage(named: "placeholder"))
         }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .black
         view.addSubview(img)
         view.addSubview(descriptionLabel)
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Назад",
@@ -47,12 +49,11 @@ class PhotoViewController: UIViewController {
     @objc func shareImage() {
         let array: [Any] = [descriptionLabel.text, img.image]
         let shareController = UIActivityViewController(activityItems: array, applicationActivities: nil)
-        var title = "Ошибка"
+        let title = "Уведомление"
         var message = "Операция не выполнена"
         shareController.completionWithItemsHandler = { _, bool, _, _ in
             if bool{
                 print("Image was send successful")
-                title = "Успешно"
                 message = "Операция выполнена"
             }
             else{
